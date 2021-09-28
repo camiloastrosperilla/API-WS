@@ -1,0 +1,64 @@
+##-----HTTP
+
+HTTP              Request                          Response
+
+1. Start Line     version: http/1.1                 version: http1.1
+                  Methods: GET,POST,PUT,DELETE     Equal and status code.
+                  /search?.q=something
+                  
+2. Headers        Host: www.google.com             cookie: .....
+                  Token: ......                    cookie: .....
+                  
+3. Blank Line
+4. Body           in a email: Username, password   HTML web page.
+
+# An API done over the internet is called Web Service.
+
+	1.##-----HTTP Start Line
+	REQUEST
+	Method(space)+API Program Folder Location+Parameters(space)HTTP Version
+
+	RESPONSE
+	HTTP Version+Status Code
+
+	METHODS:
+  GET Is Idempotent
+  POST Is not Idempotent
+  PUT Is Idempotent
+  DELETE Is Idempotent
+  
+	2.##-----TTP HEADERS
+
+	2.1. Standard Request Fields
+	A-IM
+	Accept-Language
+	Accept-Datatime
+	Authorization
+	Cache-Control
+	Content-Type
+	Date
+	...
+
+	2.2 Standard Response Fields
+	Allow
+	Cache-Control
+	Expires
+	Server
+	Set-Cookie
+
+  3.##-----Blank Line
+	
+	4.##-----BODY
+	Content sent to/from the API
+	
+	What header line describes type of content in the HTTP Body?
+	Content-Type: (Data, image, web, audio, video)
+	
+	What content types can be used for sending/receiving data?
+	XML, JSON
+	
+	
+	
+	
+
+	
